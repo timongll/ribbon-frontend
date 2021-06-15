@@ -155,10 +155,9 @@ const StakingOverview = () => {
         </OverviewTag>
         <Title className="mt-3 w-100">Staking On Ribbon</Title>
         <OverviewDescription className="mt-3 w-100">
-          Lorem ipsum dolor sit amet, consectetur adipising elit ut aliquam,
-          purus sit amet luctus venenatis, lectus magna fringilla urna,
-          porttitor rhoncus dolor purus non enim preasent elementum facilisis
-          leo, vel fringilla est
+          The program aims to grow vault adjusted TVL, expand the voting power
+          to those who missed out on the airdrop and to distribute the
+          governance token to those who have the most skin in the game.
         </OverviewDescription>
         <UnderlineLink
           to="https://ribbon.finance/faq"
