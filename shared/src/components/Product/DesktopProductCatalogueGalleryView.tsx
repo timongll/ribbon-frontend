@@ -169,7 +169,7 @@ const DesktopProductCatalogueGalleryView: React.FC<
   const { height } = useScreenSize();
   const [page, setPage] = useState(1);
   const [currentVault, setCurrentVault] = useState<VaultOptions | undefined>(
-    filteredProducts[page - 1]
+    filteredProducts[page - 2]
   );
   const { prices: assetPrices, loading: assetPricesLoading } = useAssetsPrice({
     // @ts-ignore
@@ -197,7 +197,7 @@ const DesktopProductCatalogueGalleryView: React.FC<
   }, [page, filteredProducts]);
 
   const roi = useMemo(() => {
-    const vault = filteredProducts[page];
+    const vault = filteredProducts[page - 1];
     const asset = getAssets(vault);
     const vaultAccount = vaultAccounts[vault];
     const decimals = getAssetDecimals(asset);
